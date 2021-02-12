@@ -1,9 +1,9 @@
-# test title
+# title
 
   [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  test description
+  description
 
   ## Table of Contents 
   * [Installation](#installation)
@@ -14,22 +14,22 @@
   * [Questions](#questions)
 
   ## Installation
-  test install steps
+  install
 
   ## Usage
-  test instructions for use
+  instructions
 
+  ## License
   
-    ## License
     This project is licensed under the [Apache](https://www.apache.org/licenses/LICENSE-2.0) license.
     
 
   ## Credits
-  test credits
+  contributors
 
   ## Tests
-  test examples
+  test
 
   ## Questions
-  if you have questions about this project, visit github.com/meaghancampbell
+  if you have questions about this project, visit [Github](https://github.com/meaghancampbell)
   or email emeaghancampbell@gmail.com.
