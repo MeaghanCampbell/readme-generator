@@ -1,26 +1,31 @@
-# Professional README Generator Starter Code
+# Professional README Generator
 
-[How to create a Professional README](./readme-guide.md)
+  ## Description
+  The README generator is a node.js application that creates professional readme files to describe your development projects.
 
-# Acceptance Criteria
+  ## Table of Contents 
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Screenshot](#screenshot)
+  * [Credits](#credits) 
+  * [Questions](#questions)
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+  ## Installation
+  Clone the github repsoitory and the command "node index" in the terminal to start the app. Then answer the questions and find your professional
+  readme document in the dist folder.
 
+  ## Usage
+  You can use this app to generate a professional readme file for you project.
 
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+  ## Screenshot
+  <img width="1569" alt="Screen Shot 2021-02-12 at 4 38 17 PM" src="https://user-images.githubusercontent.com/74511935/107830140-d5666180-6d50-11eb-93be-8c327ceed660.png">
 
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+  ## Credits
+  This app was created by Meaghan Campbell.
+
+  ## Questions
+  if you have questions about this project, visit [Meaghan's Github](github.com/meaghancampbell)
+  or email emeaghancampbell@gmail.com.
+
 
 

@@ -68,9 +68,9 @@ function generateMarkdown(data) {
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#credits)
-  * [Contributing](#license) 
-  * [Tests](#questions)
+  * [License](#license)
+  * [Credits](#credits) 
+  * [Tests](#tests)
   * [Questions](#questions)
 
   ## Installation
@@ -88,7 +88,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  if you have questions about this project, visit github.com/${data.github}
+  if you have questions about this project, visit [Github](https://github.com/${data.github})
   or email ${data.email}.
 `;
 }
