@@ -1,7 +1,7 @@
-# Disc-live
+# Disc-Live
 
   ## Description
-  description
+  This is a test description
 
   ## Table of Contents 
   * [Installation](#installation)
@@ -12,20 +12,20 @@
   * [Questions](#questions)
 
   ## Installation
-  Install
+  Here are the test steps
 
   ## Usage
-  Instructions
+  Here are the instructions
 
   ## License
-  Licensed under the  license.
+  This project is licensed under the Apache license.
 
   ## Credits
-  Meaghan Campbell
+  Meaghan
 
   ## Tests
-  Test
+  Here are examples
 
   ## Questions
-  if you have questions about this project, visit github.com/Meeaghan Campbell
+  if you have questions about this project, visit github.com/meaghancampbell
   or email emeaghancampbell@gmail.com.

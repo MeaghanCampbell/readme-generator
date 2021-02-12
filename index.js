@@ -60,7 +60,7 @@ const questions = () => {
             }
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'What kind of license do you have for this project?',
             choices: ['MIT', 'Apache', 'GPL', 'none']
