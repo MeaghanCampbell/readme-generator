@@ -46,12 +46,15 @@ function renderLicenseLink(license) {
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  
+  let licenseMarkdown = 
+  `## License
+  This project is licensed under the [${license}](${renderLicenseLink(license)}) license.`
+  
   if (license === 'none') {
     return ''
   } else {
-    return `
-    This project is licensed under the [${license}](${renderLicenseLink(license)}) license.
-    `
+    return licenseMarkdown
   }
 }
 
@@ -78,7 +81,6 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## License
   ${renderLicenseSection(data.license)}
 
   ## Credits
