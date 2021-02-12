@@ -63,7 +63,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'What kind of license do you have for this project?',
-            choices: ['MIT', 'Apache', 'GPL', 'none']
+            choices: ['Apache', 'MIT', 'BSD', 'GNU', 'Eclipse', 'IBM', 'none']
         },
         {
             type: 'input',
@@ -94,10 +94,11 @@ const questions = () => {
             message: 'Please enter your contact email.'
         },
     ])
+    // function to generate the markdown code
     .then(data => {
         return generateMarkdown(data)
     })
-    // TODO: Create a function to write README file
+    // function to write README file
     .then(
         function(data) {
 
@@ -105,22 +106,13 @@ const questions = () => {
                 if (err) {
                     return console.log(err)
                 }
-                console.log('success')
+                console.log('Success! Check out the dist folder to view your professional readme.md')
             })
         }
     )
 }
 
 questions()
-    /*.then(portfolioData => {
-        return generateMarkdown(portfolioData)
-    })
-    .then(data => {
-        return writeToFile(data)
-    })
-    .catch(err => {
-        console.log(err);
-      }); */
 
 
 // TODO: Create a function to initialize app
