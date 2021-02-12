@@ -1,19 +1,21 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
+const generateMarkdown = require('./utils/generateMarkdown.js')
+
 
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'name',
-            message: 'What is the name of your project? (Required)',
-            validate: nameInput => {
-                if (nameInput) {
+            name: 'title',
+            message: 'What is the title of your project? (Required)',
+            validate: titleInput => {
+                if (titleInput) {
                     return true;
                 } else {
-                    console.log('Please enter your projects name')
+                    console.log('Please enter your projects title')
                     return false
                 }
             }
@@ -61,14 +63,14 @@ const questions = () => {
             type: 'checkbox',
             name: 'license',
             message: 'What kind of license do you have for this project?',
-            choices: ['MIT', 'Apache', 'GPL']
+            choices: ['MIT', 'Apache', 'GPL', 'none']
         },
         {
             type: 'input',
-            name: 'contributing',
+            name: 'credits',
             message: 'Who contributed to this project? (Required)',
-            validate: contributingInput => {
-                if (contributingInput) {
+            validate: creditsInput => {
+                if (creditsInput) {
                     return true
                 } else {
                     console.log('Please enter contributor information')
@@ -92,12 +94,34 @@ const questions = () => {
             message: 'Please enter your contact email.'
         },
     ])
+    .then(data => {
+        return generateMarkdown(data)
+    })
+    // TODO: Create a function to write README file
+    .then(
+        function(data) {
+
+            fs.writeFile('./dist/readme.md', data, err => {
+                if (err) {
+                    return console.log(err)
+                }
+                console.log('success')
+            })
+        }
+    )
 }
 
 questions()
+    /*.then(portfolioData => {
+        return generateMarkdown(portfolioData)
+    })
+    .then(data => {
+        return writeToFile(data)
+    })
+    .catch(err => {
+        console.log(err);
+      }); */
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
