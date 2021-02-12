@@ -24,7 +24,7 @@
   This app was created by Meaghan Campbell.
 
   ## Questions
-  if you have questions about this project, visit [Meaghan's Github](github.com/meaghancampbell)
+  if you have questions about this project, visit github.com/meaghancampbell
   or email emeaghancampbell@gmail.com.
 
 

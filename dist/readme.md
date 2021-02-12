@@ -31,5 +31,5 @@
   test examples
 
   ## Questions
-  if you have questions about this project, visit [Github](https://github.com/meaghancampbell)
+  if you have questions about this project, visit github.com/meaghancampbell
   or email emeaghancampbell@gmail.com.

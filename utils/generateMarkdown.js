@@ -50,7 +50,6 @@ function renderLicenseSection(license) {
     return ''
   } else {
     return `
-    ## License
     This project is licensed under the [${license}](${renderLicenseLink(license)}) license.
     `
   }
@@ -79,6 +78,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
+  ## License
   ${renderLicenseSection(data.license)}
 
   ## Credits
